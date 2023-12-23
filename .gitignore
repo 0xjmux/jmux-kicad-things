@@ -1,0 +1,15 @@
+*swp
+old_kicad_setup/
+
+# kicad
+*-bak
+*-backups
+*-cache*
+*-bak*
+_autosave*
+\#auto_saved_files\#
+*.lck
+output/
+bom/
+production/
+
