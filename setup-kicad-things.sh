@@ -15,7 +15,7 @@ read -p "Do you want to continue? [Yy/Nn]: " -n 1 -r
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    mkdir -p "$REPO_DIR/old_kicad_setup"
+    mkdir -p "$REPO_DIR/old_kicad_confs"
 
     # replace all existing dotfiles with symlinks
     for e in "${CONF_DIRS[@]}"; do
@@ -28,7 +28,7 @@ then
         # if we exist as directory and are not a symlink
         elif [[ -d "$KICAD_CONF_DIR/$e" ]] && [[ ! -h "$KICAD_CONF_DIR/$e" ]]; then
             echo "'$e' exists as directory in user kicad configs"
-            mv "$HOME/$e" "$REPO_DIR/old_kicad_confs/$e-$EXEC_TIME"
+            mv "$KICAD_CONF_DIR/$e" "$REPO_DIR/old_kicad_confs/$e-$EXEC_TIME"
 
         elif [[ -h "$KICAD_CONF_DIR/$e" ]]; then
             echo "'$e' is already a symlink!"
@@ -45,5 +45,6 @@ then
     done
 fi
 
-printf "\nSymlinks set up. Restart Kicad and check to see if the libraries are present!\n\n"
+printf "\nSymlinks set up. Restart Kicad and check to see if the libraries are present!\n"
 
+printf "You likely also need to set up a Kicad ENV var \'JMUX_KICAD_THINGS\' pointing to $REPO_DIR !\n\n"
