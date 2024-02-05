@@ -1,9 +1,10 @@
 *swp
 old_kicad_setup/
-brechtve-kicad-things
+brechtve-kicad-things*
 
 # kicad
 *-bak
+*.bak
 *-backups
 *-cache*
 *-bak*
