@@ -1,4 +1,4 @@
-# jmux Kicad Things
+# jmux-kicad-things
 
 A place for my kicad symbols, footpritns, template files and other miscellanea.
 
@@ -70,6 +70,15 @@ Template page and description for my ESP32-Solo template
     ├── esp32-s2-solo-template
     └── esp8266-template
     
+```
+
+
+## Other
+### easyeda2kicad shortcut from my .zshrc
+In case anyone else finds it useful. Just provide the LCSC id and run it from the project folder, and as long as `./projectlib/` is created everything works nice and smooth. 
+```sh
+# easyeda2kicad shortcut just requiring the LCSC id, designed to be run from project folder
+alias e2kicad="easyeda2kicad --output ./projectlib/projectlib --full --lcsc_id "
 ```
 
 
