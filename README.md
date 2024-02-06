@@ -28,7 +28,9 @@ This makes setup easy, and prevents excessive modification of the kicad local co
 Example of the SOICBite symbol in use, from my iot_pwm_leddriver project. 
 </p>
 
-* Reversible UART bridge, which lets you easily swap your TX/RX in case you mess it up on a prototype
+* Reversible UART bridge, which lets you easily swap your TX/RX in case you mess it up on a prototype. 
+    * To use, just include the symbol and footprint in your design and wire it up as shown. If there's an issue, cut the solderjumper bridge and solder 0805 0Ω resistors vertically. 
+    * This is fine for UART, but for signals of higher frequencies you might run into issues because of impedance mismatch and the number of sharp edges present. 
 <p align="center">
 <img alt="" src="files/ReversibleUART_Layout_example.png" width="400" /><br>
 Layout example for the UART bridge
