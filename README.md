@@ -1,6 +1,6 @@
 # jmux-kicad-things
 
-A place for my kicad symbols, footpritns, template files and other miscellanea.
+A place for my kicad symbols, footprints, template files and other miscellanea.
 
 This is best used with a clean Kicad installation. 
 
