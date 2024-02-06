@@ -12,15 +12,18 @@ A lot of my designs also incorporate things from the following libraries:
 * The Espressif KiCad Library (installed via Kicad)
 
 > [!NOTE]
-> As of 12/23/2023 the full linking functionality of the `setup-kicad-things.sh` script has not been tested. Use with caution.
+> As of Feb 2024 the full functionality of the `setup-kicad-things.sh` script has not been tested from-scratch, since my environment is already configured. When I get the chance to test it, this warning will be removed. Until then, use with caution.
 
-To set up templates, libraries, and other files, run `setup-kicad-things.sh`. This script links the user-configurable kicad directories to the ones contained in this repository, which makes setup easy. 
+###### Setup
+To set up templates, libraries, and other files, run `setup-kicad-things.sh`. This script sets up symlinks from `~/.local/share/kicad/7.0/` to the directories in this repo, and moves any existing files into subdirectories under `old_kicad_conf/`. These files can then be manually moved into their corresponding directories in the repo.
+
+This makes setup easy, and prevents excessive modification of the kicad local configuration directory. To remove this repo, just delete the symlinks. 
 
 ### Repo Highlights
 * SOICBite UART and JTAG connector symbols for custom boards
 <p align="center">
 <img alt="" src="files/ProgConn-SOICBite-Symbol-Example.png" width="400" /><br>
-Example of the SOICBite symbol in use, from my [iot_pwm_leddriver](https://github.com/0xjmux/iot_pwm_leddriver) project. 
+Example of the SOICBite symbol in use, from my iot_pwm_leddriver project. 
 </p>
 
 * Reversible UART bridge, which lets you easily swap your TX/RX in case you mess it up on a prototype
@@ -43,22 +46,20 @@ Template page and description for my ESP32-Solo template
 * `my_schematics` - schematics I commonly use in my designs
 * `symbols` - Schematic symbols
 * `templates` - My templates for automatically setting up projects
-* `setup-kicad-things.sh` - script to set up symlinks from `~/.local/share/kicad/7.0/` to the directories in this repo, and move the existing files to `old_kicad_setup/`
+* `setup-kicad-things.sh` - script to set up repo, see [#Setup](#Setup) above.
 
 #### Structure
 
 ```
+├── README.md
+├── setup-kicad-things.sh
 ├── footprints
 │   ├── jmux-footprints.pretty
 │   └── packages3d
 ├── my_schematics
 │   └── Power_and_board.kicad_sch
-├── old_kicad_confs
-├── README.md
-├── setup-kicad-things.sh
+├── old_kicad_confs/
 ├── symbols
-│   ├── AHT20.lib
-│   ├── AHT21B.kicad_sym
 │   ├── Breadboard-Proto.kicad_sym
 │   └── jmux-kicadlib.kicad_sym
 └── templates
