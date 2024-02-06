@@ -6,6 +6,8 @@ This is best used with a clean Kicad installation.
 
 Some symbols/footprints in here are imported from easyeda using [easyeda2kicad](https://hackaday.com/2023/08/08/easyeda2kicad-never-draw-a-footprint-again/), others are drawn by me for specific components I commonly use, and others are of my own creation. 
 
+I try to keep this repo clean from included libraries, but mistakes happen. If you notice something, please open an issue. 
+
 A lot of my designs also incorporate things from the following libraries:
 * [kicad-tag-connect](https://github.com/nawotech/kicad-tag-connect) by nawotech
 * [SOICbite](https://github.com/SimonMerrett/SOICbite) by SimonMerrett
