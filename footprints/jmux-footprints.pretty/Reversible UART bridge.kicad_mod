@@ -8,6 +8,7 @@
 		(at 0 3.15 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "fb1be944-260e-451e-95a9-1fe9db477222")
 		(effects
 			(font
@@ -64,7 +65,7 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr smd allow_soldermask_bridges)
 	(fp_poly
 		(pts
 			(xy -0.25 -1.4) (xy 0.25 -1.4) (xy 0.25 -0.8) (xy -0.25 -0.8)
@@ -131,13 +132,13 @@
 	)
 	(fp_line
 		(start -1.65 -2.35)
-		(end -1.65 0.15)
+		(end -1.65 2.25)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "0b022bdd-b630-4ec9-ad47-6b0267507945")
+		(uuid "6bfdb0f9-04d9-4487-9833-f636a245cef0")
 	)
 	(fp_line
 		(start -1.65 -2.35)
@@ -148,16 +149,6 @@
 		)
 		(layer "F.CrtYd")
 		(uuid "ad3b74ba-aefc-4b28-9f95-4a5c0d587c10")
-	)
-	(fp_line
-		(start -1.65 -0.25)
-		(end -1.65 2.25)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "6bfdb0f9-04d9-4487-9833-f636a245cef0")
 	)
 	(fp_line
 		(start 1.65 2.25)

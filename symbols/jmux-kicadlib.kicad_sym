@@ -2519,7 +2519,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 13.97 180)
+				(at -2.54 3.81 180)
 				(length 3.81)
 				(name "GND"
 					(effects
@@ -2537,7 +2537,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 11.43 180)
+				(at -2.54 13.97 180)
 				(length 3.81)
 				(name "RX"
 					(effects
@@ -2555,7 +2555,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 8.89 180)
+				(at -2.54 11.43 180)
 				(length 3.81)
 				(name "TX"
 					(effects
@@ -2573,7 +2573,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 6.35 180)
+				(at -2.54 8.89 180)
 				(length 3.81)
 				(name "CH_PD"
 					(effects
@@ -2591,7 +2591,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 3.81 180)
+				(at -2.54 6.35 180)
 				(length 3.81)
 				(name "RST"
 					(effects
