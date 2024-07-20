@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "projectlib")(type "KiCad")(uri "${JMUX_KICAD_THINGS}/breakouts/multi-directional-switch-breakout/multi-directional-switch-breakout/projectlib/projectlib.pretty")(options "")(descr ""))
+)

@@ -435,88 +435,6 @@
 			(justify bottom)
 		)
 	)
-	(fp_text user "this position for SD header is guesstimate"
-		(at -9.652 -86.741 0)
-		(unlocked yes)
-		(layer "User.7")
-		(hide yes)
-		(uuid "b69349a6-9a2b-4b02-9723-b6df24750b8a")
-		(effects
-			(font
-				(size 0.7 0.7)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(dimension
-		(type orthogonal)
-		(layer "User.1")
-		(uuid "3338b3a8-6982-45da-8b4d-58bba89e250b")
-		(pts
-			(xy -25 -84) (xy -25.2 -77.6)
-		)
-		(height -2.2)
-		(orientation 1)
-		(gr_text "6.4000 mm"
-			(at -28.35 -80.8 90)
-			(layer "User.1")
-			(uuid "3338b3a8-6982-45da-8b4d-58bba89e250b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.12)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type orthogonal)
-		(layer "User.1")
-		(uuid "be97b723-584c-42a6-b4e4-ab7e8cf4405f")
-		(pts
-			(xy -6.1 -77.6) (xy -5.9 -80.8)
-		)
-		(height -2.4)
-		(orientation 1)
-		(gr_text "3.2000 mm"
-			(at -9.65 -79.2 90)
-			(layer "User.1")
-			(uuid "be97b723-584c-42a6-b4e4-ab7e8cf4405f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.12)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
 	(dimension
 		(type orthogonal)
 		(layer "User.1")
@@ -723,19 +641,7 @@
 		(remove_unused_layers no)
 		(uuid "2af6ed97-cac2-4807-9902-9d4c8110ff41")
 	)
-	(model "${KIPRJMOD}/projectlib/projectlib.3dshapes/TFT LCD 2.4 inch ILI9341.step"
-		(hide yes)
-		(offset
-			(xyz 0.5 34.5 3)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 -90)
-		)
-	)
-	(model "${KIPRJMOD}/projectlib/projectlib.3dshapes/TFT_320x240_touch_r0.step"
+	(model "${JMUX_KICAD_THINGS}/footprints/packages3d/ILI9341_TFT_320x240_touch.step"
 		(offset
 			(xyz -25 -2 3)
 		)
